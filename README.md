@@ -10,7 +10,7 @@ This documentation guides you in setting up a cluster with one master node and o
 |Master|master.example.com|172.42.42.100|CentOS 7|2G|2|
 |Worker|worker.example.com|172.42.42.101|CentOS 7|1G|1|
 
-## On both Kmaster and Kworker
+## On both master and worker
 Perform all the commands as root user unless otherwise specified
 ### Pre-requisites
 ##### Update /etc/hosts
