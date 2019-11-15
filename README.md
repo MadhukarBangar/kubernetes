@@ -7,8 +7,8 @@ This documentation guides you in setting up a cluster with one master node and o
 ## Assumptions
 |Role|FQDN|IP|OS|RAM|CPU|
 |----|----|----|----|----|----|
-|Master|master.example.com|172.42.42.100|CentOS 7|2G|2|
-|Worker|worker.example.com|172.42.42.101|CentOS 7|1G|1|
+|Master|master.example.com|172.42.42.100|CentOS 7|4G|2|
+|Worker|worker.example.com|172.42.42.101|CentOS 7|2G|1|
 
 ## On both master and worker
 Perform all the commands as root user unless otherwise specified
