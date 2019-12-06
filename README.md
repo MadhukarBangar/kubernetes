@@ -86,14 +86,14 @@ kubeadm init --apiserver-advertise-address=172.42.42.100 --pod-network-cidr=192.
 ##### Copy kube config
 To be able to use kubectl command to connect and interact with the cluster, the user needs kube config file.
 
-In my case, the user account is venkatn
+In my case, the user account is root
 ```
-mkdir /home/venkatn/.kube
-cp /etc/kubernetes/admin.conf /home/madhukab/.kube/config
-chown -R madhukab:madhukab /home/madhukab/.kube
+  mkdir -p $HOME/.kube
+  sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+  sudo chown $(id -u):$(id -g) $HOME/.kube/config
 ```
 ##### Deploy Calico network
-This has to be done as the user in the above step (in my case it is __madhukab__)
+
 ```
 kubectl create -f https://docs.projectcalico.org/v3.9/manifests/calico.yaml
 ```
