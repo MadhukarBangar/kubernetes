@@ -22,6 +22,8 @@ xx.xx.xx.xx master.example.com master
 xx.xx.xx.xx worker.example.com worker
 EOF
 ```
+Replace xx.xx.xx.xx with valid IP address
+
 ##### Install, enable and start docker service
 Use the Docker repository to install docker.
 > If you use docker from CentOS OS repository, the docker version might be old to work with Kubernetes v1.13.0 and above
@@ -84,6 +86,8 @@ systemctl start kubelet
 ```
 kubeadm init --apiserver-advertise-address=xx.xx.xx.xx --pod-network-cidr=192.168.0.0/16
 ```
+Replace xx.xx.xx.xx with master IP address
+
 ##### Copy kube config
 To be able to use kubectl command to connect and interact with the cluster, the user needs kube config file.
 
